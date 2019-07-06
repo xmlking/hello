@@ -1,0 +1,25 @@
+# compiled output
+dist
+tmp
+bin
+
+.git/
+.gitignore
+
+# dependencies
+node_modules
+bower_components
+
+# IDEs and editors
+.idea
+.vscode
+.project
+.classpath
+*.launch
+.settings/
+
+# misc
+
+#System Files
+.DS_Store
+Thumbs.db
