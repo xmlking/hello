@@ -30,7 +30,7 @@ Thumbs.db
 .idea/
 *.iml
 *.swp
-.vscode
+# .vscode
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
@@ -48,5 +48,4 @@ _test
 
 # Binaries
 bin/
-./great1
-./great2
+./hello

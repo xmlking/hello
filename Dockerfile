@@ -67,22 +67,22 @@ USER nobody:nobody
 # Metadata params
 ARG VERSION=0.0.1
 ARG BUILD_DATE
-ARG VCS_URL=go_project
+ARG VCS_URL=hello
 ARG VCS_REF=1
 ARG NAME=app
 ARG VENDOR=sumo
 
 # Metadata
 LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.name=$NAME \
-      org.label-schema.description="Example of multi-stage docker build" \
-      org.label-schema.url="https://example.com" \
-      org.label-schema.vcs-url=https://github.com/xmlking/$VCS_URL \
-      org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vendor=$VENDOR \
-      org.label-schema.version=$VERSION \
-      org.label-schema.docker.schema-version="1.0" \
-      org.label-schema.docker.cmd="docker run -it -p 80:8080  xmlking/go-app"
+    org.label-schema.name=$NAME \
+    org.label-schema.description="Example of multi-stage docker build" \
+    org.label-schema.url="https://example.com" \
+    org.label-schema.vcs-url=https://github.com/xmlking/$VCS_URL \
+    org.label-schema.vcs-ref=$VCS_REF \
+    org.label-schema.vendor=$VENDOR \
+    org.label-schema.version=$VERSION \
+    org.label-schema.docker.schema-version="1.0" \
+    org.label-schema.docker.cmd="docker run -it -p 80:8080  xmlking/go-app"
 
 # Run the compiled binary.
 ENTRYPOINT ["/app"]
